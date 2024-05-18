@@ -1,4 +1,4 @@
-import 'package:education_apps/src/media_res.dart';
+import 'package:education_apps/core/utils/media_res.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

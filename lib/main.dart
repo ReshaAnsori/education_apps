@@ -1,9 +1,12 @@
-import 'package:education_apps/src/colours.dart';
-import 'package:education_apps/src/fonts.dart';
-import 'package:education_apps/src/services/routes.dart';
+import 'package:education_apps/core/services/injection_container.dart';
+import 'package:education_apps/core/utils/colours.dart';
+import 'package:education_apps/core/utils/fonts.dart';
+import 'package:education_apps/core/services/routes.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await init();
   runApp(const MyApp());
 }
 
