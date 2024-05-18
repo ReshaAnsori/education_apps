@@ -1,4 +1,3 @@
-
 import 'package:education_apps/core/utils/typedefs.dart';
 
 abstract class UsecaseWithParams<Type, Params> {

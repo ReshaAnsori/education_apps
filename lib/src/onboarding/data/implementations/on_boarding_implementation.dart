@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:education_apps/core/errors/exceptions.dart';
 import 'package:education_apps/core/errors/failures.dart';
-import 'package:education_apps/core/src/onboarding/domain/repositores/on_boarding_repository.dart';
 import 'package:education_apps/core/utils/typedefs.dart';
 import 'package:education_apps/src/onboarding/data/datasorce/on_boarding_local_source.dart';
+import 'package:education_apps/src/onboarding/domain/repositores/on_boarding_repository.dart';
 
 class OnBoardingImpl implements OnBoardingRepo {
   OnBoardingImpl(this._localSource);
@@ -22,8 +22,14 @@ class OnBoardingImpl implements OnBoardingRepo {
   }
 
   @override
-  ResultFuture<void> checkIfUserFirstTimer() {
-    // TODO: implement checkIfUserFirstTimer
-    throw UnimplementedError();
+  ResultFuture<bool> checkIfUserFirstTimer() async {
+    try {
+      final result = await _localSource.checkIfUserFirstTimer();
+      return Right(result);
+    } on CacheException catch (e) {
+      return Left(
+        CacheFailure(message: e.message, statusCode: e.statusCode),
+      );
+    }
   }
 }

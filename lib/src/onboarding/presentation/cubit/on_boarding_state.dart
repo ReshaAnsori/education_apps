@@ -16,7 +16,7 @@ final class CachingFirstTimerState extends OnBoardingState {
 }
 
 final class CheckingIfUserIsFirstTimerState extends OnBoardingState {
-  const CheckingIfUserIsFirstTimerState(Object object);
+  const CheckingIfUserIsFirstTimerState();
 }
 
 final class UserCachedState extends OnBoardingState {
@@ -34,5 +34,3 @@ final class OnBoardingErrorState extends OnBoardingState {
 
   final String message;
 }
-
-

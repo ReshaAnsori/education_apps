@@ -9,5 +9,4 @@ class CheckIfUserFirstTimer extends UsecaseWithoutParams<bool> {
 
   @override
   ResultFuture<bool> call() => _repo.checkIfUserFirstTimer();
-  
 }

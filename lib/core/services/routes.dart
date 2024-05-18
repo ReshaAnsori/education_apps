@@ -1,7 +1,7 @@
 import 'package:education_apps/core/common/views/under_construction_screen.dart';
 import 'package:education_apps/core/services/injection_container.dart';
-import 'package:education_apps/core/src/onboarding/presentation/on_boarding_screen.dart';
 import 'package:education_apps/src/onboarding/presentation/cubit/on_boarding_cubit.dart';
+import 'package:education_apps/src/onboarding/presentation/screens/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

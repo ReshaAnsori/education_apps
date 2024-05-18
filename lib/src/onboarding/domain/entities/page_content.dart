@@ -13,7 +13,8 @@ class PageContent extends Equatable {
           image: MediaRes.casualReading,
           title: 'Brand new curriculum',
           description:
-              "this is the first online education platform designed by the world's top professor",
+              'this is the first online education platform designed by the '
+              "world's top professor",
         );
 
   const PageContent.second()
@@ -21,7 +22,8 @@ class PageContent extends Equatable {
           image: MediaRes.casualLife,
           title: 'Brand new fun atmosphere',
           description:
-              "this is the first online education platform designed by the world's top professor",
+              'this is the first online education platform designed by '
+              "the world's top professor",
         );
 
   const PageContent.third()
@@ -29,7 +31,8 @@ class PageContent extends Equatable {
           image: MediaRes.casualMeditationScience,
           title: 'Easy to join lesson',
           description:
-              "this is the first online education platform designed by the world's top professor",
+              'this is the first online education platform designed by '
+              "the world's top professor",
         );
 
   final String image;

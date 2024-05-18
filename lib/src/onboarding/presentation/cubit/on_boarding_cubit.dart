@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:education_apps/src/onboarding/domain/usecases/cache_first_timer.dart';
-import 'package:education_apps/src/onboarding/domain/usecases/check_If_user_first_timer.dart';
+import 'package:education_apps/src/onboarding/domain/usecases/check_user_first_timer.dart';
 import 'package:equatable/equatable.dart';
 
 part 'on_boarding_state.dart';
