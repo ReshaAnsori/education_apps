@@ -16,7 +16,7 @@ class OnBoardingImpl implements OnBoardingRepo {
       return const Right(null);
     } on CacheException catch (e) {
       return Left(
-        CacheFailure(message: e.message, statusCode: e.statusCode),
+        CacheFailure(message: e.message, statusCode: e.statusCode.toString()),
       );
     }
   }
@@ -28,7 +28,7 @@ class OnBoardingImpl implements OnBoardingRepo {
       return Right(result);
     } on CacheException catch (e) {
       return Left(
-        CacheFailure(message: e.message, statusCode: e.statusCode),
+        CacheFailure(message: e.message, statusCode: e.statusCode.toString()),
       );
     }
   }

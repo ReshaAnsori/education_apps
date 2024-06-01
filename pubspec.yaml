@@ -9,10 +9,15 @@ environment:
 dependencies:
   bloc: ^8.1.4
   chewie: ^1.8.1
+  cloud_firestore: ^4.17.4
   cupertino_icons: ^1.0.6
   dartz: ^0.10.1
   equatable: ^2.0.5
   file_picker: ^8.0.3
+  firebase_auth: ^4.19.6
+  firebase_core: ^2.31.1
+  firebase_storage: ^11.7.6
+  firebase_ui_auth: ^1.7.0
   flutter:
     sdk: flutter
 

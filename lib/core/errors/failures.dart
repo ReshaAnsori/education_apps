@@ -9,9 +9,10 @@ abstract class Failure extends Equatable {
         );
 
   final String message;
-  final int statusCode;
+  final String statusCode;
 
-  String get errorMessage => '$statusCode Error : $message';
+  String get errorMessage =>
+      '$statusCode${statusCode is String ? '' : ' Error'} : $message';
 
   @override
   List<Object> get props => [message, statusCode];

@@ -6,7 +6,7 @@ class ServerException extends Equatable implements Exception {
     required this.message,
   });
 
-  final int statusCode;
+  final String statusCode;
   final String message;
 
   @override

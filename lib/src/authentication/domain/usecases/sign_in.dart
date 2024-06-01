@@ -1,14 +1,15 @@
 import 'package:education_apps/core/usecase/usecase.dart';
 import 'package:education_apps/core/utils/typedefs.dart';
+import 'package:education_apps/src/authentication/domain/entities/user_entity.dart';
 import 'package:education_apps/src/authentication/domain/repos/auth_repository.dart';
 import 'package:equatable/equatable.dart';
 
-class SignIn extends UsecaseWithParams<void, SignInParams> {
+class SignIn extends UsecaseWithParams<LocalUser, SignInParams> {
   SignIn(this._repo);
 
   final AuthRepository _repo;
   @override
-  ResultFuture<void> call(SignInParams params) => _repo.signIn(
+  ResultFuture<LocalUser> call(SignInParams params) => _repo.signIn(
         email: params.email,
         password: params.password,
       );

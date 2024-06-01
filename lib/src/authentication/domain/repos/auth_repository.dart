@@ -20,6 +20,6 @@ abstract class AuthRepository {
 
   ResultFuture<void> updateUser({
     required EnumUpdateUser action,
-    dynamic userData,
+    required dynamic userData,
   });
 }
